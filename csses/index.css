@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+header img{
+    height: 128px;
+    width: 128px;
+}
+nav {
+    float: left;
+    background: #3c3c3c;
+    width: auto;
+}
+nav ul {
+    list-style-type: none;
+    color: blue
+}
+
+p{
+    color: white;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    background-color: black;
+    width: 70%;
+}
+article h1{
+    font-size: 50px;
+    color: #FFF;
+}
+
+article h2{
+    font-size: 20px;
+    color: yellow;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+footer li{
+    display: inline;
+}
