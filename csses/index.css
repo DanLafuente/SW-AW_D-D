@@ -11,6 +11,7 @@ header img{
     height: 128px;
     width: 128px;
 }
+
 nav {
     float: left;
     background: #3c3c3c;
@@ -35,10 +36,14 @@ article h1{
     font-size: 50px;
     color: #FFF;
 }
-
 article h2{
     font-size: 20px;
     color: yellow;
+}
+article img{
+    height: 516x;
+    width: 516px;
+    text-align: center;
 }
 
 section::after {
