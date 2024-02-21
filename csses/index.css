@@ -12,35 +12,18 @@ header img{
     width: 128px;
 }
 
-nav {
-    float: left;
-    background: #3c3c3c;
-    width: auto;
-}
-nav ul {
-    list-style-type: none;
-    color: blue
-}
-
-p{
-    color: white;
-}
-
-article {
-    float: left;
+section {
     padding: 20px;
-    background-color: black;
-    width: 70%;
 }
-article h1{
+
+section h1{
     font-size: 50px;
-    color: #FFF;
 }
-article h2{
+section h2{
     font-size: 20px;
-    color: yellow;
+    color: blue;
 }
-article img{
+section img{
     height: 516x;
     width: 516px;
     text-align: center;
