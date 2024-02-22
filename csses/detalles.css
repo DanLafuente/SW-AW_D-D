@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+header img{
+    height: 128px;
+    width: 128px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+footer li{
+    display: inline;
+}
