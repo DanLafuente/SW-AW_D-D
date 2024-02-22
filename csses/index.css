@@ -42,19 +42,4 @@ footer {
 }
 footer li{
     display: inline;
-}
-
-
-span.rojo { 
-    color: red; 
-}
-span.azul{
-    color:blue;
-}
-span.verde {
-    color:green;
-}
-span.dorado{
-    color:gold;
-}
-   
+}  
