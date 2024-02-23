@@ -4,41 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Miembros</title>
-        <link id="estilo" rel="stylesheet" type="text/css" href="csses/colores.css" />
-        <style>
-            body{
-                font-family: sans-serif;
-            }
-            header {
-                text-align: center;
-                font-size: 40px;
-                background-color: black;
-                color: white;
-            }
-            header img{
-                height: 128px;
-                width: 128px;
-            }
-            section::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            footer {
-                background-color: #777;
-                padding: 10px;
-                text-align: center;
-                color: white;
-            }
-            footer li{
-                display: inline;
-            }
-        </style>
+        <link id="estilo" rel="stylesheet" type="text/css" href="csses/miembros.css" />
     </head>
 
     <body>
-        <!--Encabezado-->
-        <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png"></header>
+        <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height=128px width= 128px></header>
         <footer>
             <ul><li><a href="index.html">Inicio</a></li>
                 <li><a href="detalles.html">Detalles</a></li>
@@ -49,42 +19,41 @@
         </footer>
 
         <!--Hoja-->
-        <section>
             <!--Lateral con referencias-->
-            <nav class="MdP"> <h1>Miembros del Proyecto</h1>
-                <ol><li> <a href="#DanielLafuenteBazo">Daniel Lafuente Bazo</a></li>
-                    <li> <a href="#HugoVivacioFernandez">Hugo Vivacio Fernandez</a> </li>
-                    <li> <a href="#JaimeIsarMuñoz">Jaime Isar Muñoz</a> </li>
-                    <li> <a href="#AlejandroRodriguezGiner">Alejandro Rodriguez Giner</a> </li>
+            <h1>Miembros del Proyecto</h1>
+                <ol><li> <a href="#DanielLafuenteBazo">Daniel Lafuente Bazo <img src="img/daniLafu.png" height=64px width= 64px></a></li>
+                    <li> <a href="#HugoVivacioFernandez">Hugo Vivacio Fernandez <img src="img/hugouwu.png" height=64px width= 64px></a> </li>
+                    <li> <a href="#JaimeIsarMuñoz">Jaime Isar Muñoz <img src="img/jimmysaurio.png" height=64px width= 64px></a> </li>
+                    <li> <a href="#AlejandroRodriguezGiner">Alejandro Rodriguez Giner<img src="img/chuvak.png" height=64px width= 64px></a> </li>
 
                 </ol>
-            </nav>
             <!--Lista de miembros del equipo de desarrollo-->
-            <article> 
                 <ol><li id="DanielLafuenteBazo"> <h3>Daniel Lafuente Bazo</h3>
-                        <dt><ins>Nombre:</ins></dt>
+                        <dt>Nombre:</dt>
                         <dd>Daniel Lafuente Bazo</dd>
 
-                        <dt><ins>Correo de contacto:</ins></dt>
+                        <dt>Correo de contacto:</dt>
                         <dd>danlafue@ucm.es</dd>
 
                         <dt>Imagen de Daniel</dt>
                         <dd><img src="img/dani.jpg"></dd>
-                        <dd><span class="verde"><strong>Historia:</strong></span></dd>
-                        <dd>Ya no se si son leds o está ardiendo la CPU.</dd>
+                        <dd>Historia:</dd>
+                        <dd><p>Un gran y atrevido emprendedor en el mundo Web y sus CSSes.</p>
+                        <p>Mensaje: "Ya no se si son leds o está ardiendo la CPU."</p></dd>
                     </li>
                     <p></p><!--Enter-->
                     <li id="HugoVivacioFernandez"><h3> Hugo Vivacio Fernandez</h3>
-                        <dt><ins>Nombre:</ins></dt>
+                        <dt>Nombre:</dt>
                         <dd>Hugo Vivacio Fernandez</dd>
 
-                        <dt><ins>Correo de contacto:</ins></dt>
+                        <dt>Correo de contacto:</dt>
                         <dd>hvivanco@ucm.es</dd>
 
                         <dt>Imagen de Hugo</dt>
                         <dd><img src="img/hugo.jpg"></dd>
-                        <dd><span class="azul"><strong>Historia:</strong></span></dd>
-                        <dd>F, por nuestro Dundeons Master. F de FURRO</dd>
+                        <dd>Historia:</dd>
+                        <dd><p>Aquí os presento a nuestro gran maravilloso Dungeon Master que tuvo esta gran idea en primer lugar.</p>
+                            <p>Mensaje: "F, por nuestro Dundeons Master. F de FURRO."</p></dd>
                     <p></p><!--Enter-->
                     <li id="JaimeIsarMuñoz"><h3> Jaime Isar Muñoz</h3>
                         <dt><ins>Nombre:</ins></dt>
@@ -95,8 +64,9 @@
 
                         <dt>Imagen de Jaime</dt>
                         <dd><img src="img/jimmy.jpg"></dd>
-                        <dd><span class="rojo"><strong>Historia:</strong></span></dd>
-                        <dd>Erbisiho is coming for your weakness.</dd>
+                        <dd>Historia:</dd>
+                        <dd><p>Tambien conocido como Jimmy, es un ser de luz que se dedica ha hacer el mal. Nos hace feliz tenerlo, pero por favor, no le des nada inflamabe</p>
+                            <p>Mensaje: "Erbisiho is coming for your weakness."</p></dd>
                     <p></p><!--Enter-->
                     <li id="AlejandroRodriguezGiner"><h3> Alejandro Rodriguez Giner </h3>
                         <dt><ins>Nombre:</ins></dt>
@@ -107,14 +77,13 @@
 
                         <dt>Imagen de Alejandro</dt>
                         <dd><img src="img/alex.jpg"></dd>
-                        <dd><span class="dorado"><strong>Historia:</strong></span></dd>
-                        <dd>Aquí el artista del grupo. Yo me encargo de hacer todo lo que viene siendo el estilo y la personalidad de la página
-                            y procuro que sea lo más atractivo posible.
+                        <dd>Historia:</dd>
+                        <dd><p>Saludad a la mascota, tambien conocida como Chuvakan. Es tan mono que se cree artista cuando ha hecho gran parte del diseño de esta página.</p>
+                            <p>Mensaje: "No me mireis que me estoy cambiando."</p>
                         </dd>
                     </li>
                 </ol>
-            </article> <!--Fin de Lista de miembros del equipo de desarrollo-->
-        </section>
+
 
     </body>
 </html>

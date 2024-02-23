@@ -3,156 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            font-family: sans-serif;
-        }
-        header {
-            text-align: center;
-            font-size: 40px;
-            background-color: black;
-            color: white;
-        }
-        header img{
-            height: 128px;
-            width: 128px;
-        }
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        footer {
-            background-color: #777;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-        footer li{
-            display: inline;
-        }
-    </style>
+    <title>Bocetos</title>
+    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
 <body>
-    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png"></header>
+    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height=128px weight=128px></header>
     <footer>
         <ul><li><a href="index.html">Inicio</a></li>
             <li><a href="detalles.html">Detalles</a></li>
             <li><a href="Miembros.html">Miembros</a></li>
             <li><a href="planificacion.html">Planificacion</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
         </ul>
     </footer>
     <h1>Bocetos</h1>
-    <h2>1. Pantalla principal</h2>
-    <img src = "img/boceto_pagina_principal.jpeg">
-    <p>Desde la pagina principal se puede navegar hasta el resto de paginas. Lo primero que encontramos es el panel de campañas, 
-        en este panel podremos crear camapañas, ademas nos saldran en formato de lista las capañas activas en las que estamos primero, y despues capañas a las que nos podriamos unir.
-        Para entrar a las campañas basta con clicar en el nombre de la campaña. (11)
-        Debajo de este panel habra dos botones, uno en el que pone "Tus personaje"(3) y otro en el que pone "Tus mapas"(6),
-        cada boton te llevara a su respectiva pagina.
-        Por ultimo, debajo de los botones, esta el panel de foros en el que puedes crear, o buscar foros que te interesen con el buscador,
-        para entrar en el foro basta con clicar en el nombre de la foro. (10)
-        A la izquierda de la pagina principal y en el resto de paginas habra una barra lateral la cual podemos abrir para que nos de aceso
-        al resto de enlaces y paginas. (2)
+    <ol>
+    <li id="PP">Pantalla principal</li>
+    <img src = "img/boceto_pagina_principal.jpeg" width= 360px height= 500px>
+    <p>Desde la página principal se puede navegar hasta el resto de páginas. Lo primero que encontramos es el panel de campañas, 
+        en este panel podremos crear camapañas, además nos saldran en formato de lista las capañas activas en las que estamos primero, y despues capañas a las que nos podríamos unir.
+        Para entrar a las campañas basta con clicar en el nombre de la campaña.
+        Debajo de este panel habrá dos botónes, uno en el que pone "Tus personajes" y otro en el que pone "Tus mapas",
+        cada botón te llevará a su respectiva página.
+        Por último, debajo de los bótones, esta el panel de foros en el que puedes crear, o buscar foros que te interesen con el buscador,
+        para entrar en el foro basta con clicar en el nombre de la foro. 
+        A la izquierda de la página principal y en el resto de páginas habrá una barra lateral la cual podemos abrir para que nos de acceso
+        al resto de enlaces y páginas.
     </p>
-    <h2>2. Barra lateral</h2>
-    <img src = "img/boceto_barra_lateral.jpeg">
-    <p>La barra lateral nos dara aceso a una variedad de enlaces. Tiene un enlace a la pagina principal(1), a la informacion de las raza(8) y 
-        de las clases (9) y tambien tendra enlaces a las paginas de "Tus personajes" (3) y de "Tus mapas" (6) ademas de enlaces a las campañas en las que esta el usuario.
-        Tambien tendran acceso a una pagina en la que se explica como jugar a Dungeons and Dragons 5 edition en formato de texto.
+    <li id="BL">Barra lateral</li>
+    <img src = "img/boceto_barra_lateral.jpeg" width= 360px height= 500px>
+    <p>La barra lateral nos dará aceso a una variedad de enlaces. Tiene un enlace a la página principal, a la información de las razas y 
+        de las clases y también tendra enlaces a las páginas de <a href="PJs">"Tus personajes"</a> y de <a href="Maps">"Tus mapas"</a> además de enlaces a las campañas en las que esta el usuario.
+        Tambien tendrán acceso a una página en la que se explica como jugar a Dungeons and Dragons 5 edition en formato de texto.
     </p>
-    <h2>3. Tus personajes</h2>
-    <img src = "img/boceto_tus_personajes.jpeg">
-    <p>En esta pagina puedes organizar y editar los personajes que has creado.
-        Lo primero que nos encontramos es un boton en el que pone "Nuevo personaje" el cual nos llevara a la pagina de 
-        creacion de personajes. (4) Debajo de este boton hay un buscador y filtros que puedes usar para buscar a un personaje entre 
-        todos tus personajes. Debajo del buscador habra paneles con la informcion de cada personaje, 
-        si clicamos en el nombre del personaje pasaremos a la visualizacion de la informacion del personaje. 
-        Junto a cada panel habra un boton con el que podemos eliminar dicho personaje y otro con el que podemos editarlo. (5)
+    <li id="PJs">Tus personajes</li>
+    <img src = "img/boceto_tus_personajes.jpeg" width= 360px height= 500px>
+    <p>En esta página puedes organizar y editar los personajes que has creado.
+        Lo primero que nos encontramos es un botón en el que pone "Nuevo personaje" el cual nos llevará a la página de 
+        <a href="#CreacionPJs">creación de personajes</a>. Debajo de este botón hay un buscador y filtros que puedes usar para buscar a un personaje entre 
+        todos tus personajes. Debajo del buscador habrá paneles con la información de cada personaje, 
+        si clicamos en el nombre del personaje pasaremos a la visualización de la información del personaje. 
+        Junto a cada panel habrá un botón con el que podemos eliminar dicho personaje y otro con el que podemos editarlo.
     </p>
-    <h2>4. Creacion de personajes</h2>
-    <img src = "img/boceto_creacion_personajes.jpeg">
-    <p>En esta pagina se exponene las opciones que tiene el usuario a la hora de crear el personaje en forma de formulario, una vez acabado el "formulario"
-        el personaje se guardara y ya se podra usar en las campañas.
+    <li id="CreacionPJs">Creación de personajes</li>
+    <img src = "img/boceto_creacion_personajes.jpeg" width= 360px height= 500px>
+    <p>En esta página se exponene las opciones que tiene el usuario a la hora de crear el personaje en forma de formulario, una vez acabado el "formulario"
+        el personaje se guardará y ya se podrá usar en las campañas.
     </p>
-    <h2>5. Edicion de personajes</h2>
-    <img src = "img/boceto_edicion_personajes.jpeg">
-    <p>En esta pagina el usuario sera capaz de editar la informacion de su personaje, podra cambiar la raza, la clase, el nivel, etc...
-        Una vez acabado de editar su personaje el usuario debe pulsar el boton de guardado que se encuentra al final de la pagina y te devuelve a la 
-        pagina de "Tus personajes". (3)
+    <li id="EdicionPJs">5. Edicion de personajes</li>
+    <img src = "img/boceto_edicion_personajes.jpeg" width= 360px height= 500px>
+    <p>En esta página el usuario sera capaz de editar la informacion de su personaje, podrá cambiar la raza, la clase, el nivel, etc...
+        Una vez acabado de editar su personaje el usuario debe pulsar el botón de guardado que se encuentra al final de la página y te devuelve a la 
+        página de <a href="#PJs">"Tus personajes"</a>.
     </p>
-    <h2>6. Tus mapas</h2>
-    <img src = "img/boceto_tus_mapas.jpeg">
+    <li id="Maps">6. Tus mapas</li>
+    <img src = "img/boceto_tus_mapas.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina puedes organizar y editar los mapas que has creado.
-        Lo primero que nos encontramos es un boton en el que pone "Nuevo mapa" el cual nos llevara a la pagina de 
-        creacion de mapas. (7) Debajo hay un buscador con el que podemos buscar por nombres los mapas.
-        Denajo del buscador hay paneles con una visualizacion previa del mapa ademas de informacion de este como puede ser su tamaño o su nombre.
-        Si hacemos click en uno de estos paneles se nos llevara a la pagina de edicion del mapa. (7)
-        Junto a cada panel habra un boton con el que podemos eliminar dicho mapa.
+        En esta página puedes organizar y editar los mapas que has creado.
+        Lo primero que nos encontramos es un botón en el que pone "Nuevo mapa" el cual nos llevará a la página de 
+        <a href="#CrEdMaps">creación y edición de mapas</a>. Debajo hay un buscador con el que podemos buscar por nombres los mapas.
+        Debajo del buscador hay paneles con una visualización previa del mapa además de información de este como puede ser su tamaño o su nombre.
+        Si hacemos click en uno de estos paneles se nos llevará a la página de  <a href="#CrEdMaps">creación y edición de mapas</a>.
+        Junto a cada panel habrá un botón con el que podemos eliminar dicho mapa.
     </p>
-    <h2>7. Creacion/edicion de mapas</h2>
-    <img src = "img/boceto_creacion_mapas.jpeg">
+    <li id="CrEdMaps">Creación/edición de mapas</li>
+    <img src = "img/boceto_creacion_mapas.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina se crean o se editan los mapas que ya tienes.
+        En esta página se crean o se editan los mapas que ya tienes.
         Lo primero que nos encontramos es que tenemos que poner el nombre del mapa y su tamaño, justo debajo de eso encontramos un panel cuadriculado.
-        Este panel cuadriculado sera el mapa y a la derecha de dicho panel habra una serie de listas con los distintos tipos de objetos que podemos poner en el mapa,
-        Al final de la pagina encontramos un boton de guardado que al pulsarlo nos llevara a la pagina de "Tus mapas". (7)
+        Este panel cuadriculado será el mapa y a la derecha de dicho panel habrá una serie de listas con los distintos tipos de objetos que podemos poner en el mapa,
+        Al final de la página encontramos un botón de guardado que al pulsarlo nos llevará a la página de  <a href="#Maps">"Tus mapas"</a>.
     </p>
-    <h2>8. Razas</h2>
-    <img src = "img/boceto_razas.jpeg">
+    <li id="Races">Razas</li>
+    <img src = "img/boceto_razas.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina se muestra la informacion de cada raza en forma de paneles en las que hay una pequeña imagen de la raza 
-        y donde se explican brebemente su historia y las caracteristicas que tienen,
-        tambien habra una pequeña lista donde se listaran las subrazas que tiene cada raza.
-        Cuando clicamos en una raza nos llevara a otra pagina en la que se describe mas detalladamente cada raza en formato de texto.
+        En esta página se muestra la información de cada raza en forma de paneles en las que hay una pequeña imagen de la raza 
+        y donde se explican brevemente su historia y las características que tienen,
+        tambien habrá una pequeña lista donde se listarán las subrazas que tiene cada raza.
+        Cuando clicamos en una raza nos llevará a otra página en la que se describe más detalladamente cada raza en formato de texto.
     </p>
-    <h2>9. Clases</h2>
-    <img src = "img/boceto_clases.jpeg">
+    <li id="Class">Clases</li>
+    <img src = "img/boceto_clases.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina se muestra la informacion de cada clase en forma de paneles en las que hay una pequeña imagen de la clase 
-        y donde se explica brebemente de que trata la clase, tambien habra una pequeña lista donde se listaran las subclases que tiene cada clase.
-        Cuando clicamos en una clase nos llevara a otra pagina en la que se describe mas detalladamente cada clase en formato de texto.
+        En esta página se muestra la información de cada clase en forma de paneles en las que hay una pequeña imagen de la clase 
+        y donde se explica brevemente de que trata la clase, tambien habrá una pequeña lista donde se listarán las subclases que tiene cada clase.
+        Cuando clicamos en una clase nos llevará a otra página en la que se describe más detalladamente cada clase en formato de texto.
     </p>
-    <h2>10. Foros</h2>
-    <img src = "img/boceto_foro.jpeg">
+    <li id="Forums">Foros</li>
+    <img src = "img/boceto_foro.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina los usuarios podran hablar todos juntos. Lo primero que nos encontramos es el nombre del foro 
-        y una descripcion que explica de que se va a hablar en el foro. Tambien se indicara que usuario creo el foro.
-        Debajo podemos encontrar un panel en el que se mostraran los mensages mandados en dicho foro y una barra en la que podemos
-        escribir el mensage que queramos mandar, para mandarlo hay un boton a la derecha que mandara el mensage al foro para que el 
+        En esta página los usuarios podrán hablar todos juntos. Lo primero que nos encontramos es el nombre del foro 
+        y una descripción que explica de que se va a hablar en el foro. Tambien se indicará que usuario creó el foro.
+        Debajo podemos encontrar un panel en el que se mostrarán los mensajes mandados en dicho foro y una barra en la que podemos
+        escribir el mensaje que queramos mandar, para mandarlo hay un botón a la derecha que mandará el mensaje al foro para que el 
         resto de usuarios lo puedan ver.
     </p>
-    <h2>11. Campañas</h2>
-    <img src = "img/boceto_campaña.jpeg">
+    <li id="Campañas">Campañas</li>
+    <img src = "img/boceto_campaña.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina los usuarios podran unirse a la campaña, ademas de poder comunicarse entre ellos.
-        Lo primero que encontramos es el nombre de la campaña y la descripcion de esta en la que se explicara la historia de la campaña
-        y los datalles necesarios. Debajo de la descripcion encontramos una lista en la que se mostrar los usuarios que se han unido 
-        a la camapaña y quien la ha creado, quien cree la campaña se le denominara Dungeon Master o DM. Tambien Se mostrar que personaje 
-        va a jugar cada usuario en la campaña y que clase es dicho personaje, el DM sera el unico capaz de ver mas informacion de los personaje 
+        En esta página los usuarios podrán unirse a la campaña, además de poder comunicarse entre ellos.
+        Lo primero que encontramos es el nombre de la campaña y la descripción de esta en la que se explicara la historia de la campaña
+        y los datalles necesarios. Debajo de la descripción encontramos una lista en la que se mostrar los usuarios que se han unido 
+        a la camapaña y quien la ha creado, quien cree la campaña se le denominara Dungeon Máster o DM. Tambien Se mostrar que personaje 
+        va a jugar cada usuario en la campaña y que clase es dicho personaje, el DM sera el único capaz de ver más informacion de los personaje 
         ya que sera capaz de pulsar en los nombres de los personajes y ver toda la informacion pero no modificarla.
-        Debajo de la lista habra un boton con el que, si la campaña no tiene suficiiente jugadores, un usuario podra uniser a dicha campaña. 
-        Ademas el DM sera capaz de eliminar usuarios de la lista y por lo tanto de la campaña. 
-        Lo siguiente que encontramos es un panel en el que se mostraran los mensages mandados en dicha campaña y una barra en la que podemos
-        escribir el mensage que queramos mandar, para mandarlo hay un boton a la derecha que mandara el mensage al foro para que el 
-        resto de usuarios lo puedan ver. Al final de la pagina encontramos un boton en el que pone "Tablero Virtual" el cual al pulsarlo te 
-        llevara al tablero virtual (12) de la campaña.
+        Debajo de la lista habrá un botón con el que, si la campaña no tiene suficiiente jugadores, un usuario podrá uniser a dicha campaña. 
+        Además el DM sera capaz de eliminar usuarios de la lista y por lo tanto de la campaña. 
+        Lo siguiente que encontramos es un panel en el que se mostrarán los mensajes mandados en dicha campaña y una barra en la que podemos
+        escribir el mensaje que queramos mandar, para mandarlo hay un botón a la derecha que mandará el mensaje al foro para que el 
+        resto de usuarios lo puedan ver. Al final de la página encontramos un botón en el que pone "Tablero Virtual" el cual al pulsarlo te 
+        llevará al <a href="#TV">tablero virtual</a> de la campaña.
     </p>
-    <h2>12. Tablero Virtual</h2>
-    <img src = "img/boceto_tablero_virtual.jpeg">
+    <li id="TV">Tablero Virtual</li>
+    <img src = "img/boceto_tablero_virtual.jpeg" width= 360px height= 500px>
     <p>
-        En esta pagina los usuario podran usar sus mapas y persoanjes para poder jugar. Habar un panel cuadriculado en el que el DM puede poner sus mapas para la campaña y 
-        donde podra crear fichas que serbiran como NPCs. Cada personaje de los jugadores tendra su propia ficha la cual solo ellos o el DM pueden mover. 
-        El DM sera el unico que pueda mover las fichas de NPCs. A la derecha del panel habra una bara lateral la cual solo el DM podra ver e interactuar con ella. 
-        En esta barra habra un boton que creara una nueva ficha en el mapa, y una lista con todas las fichas en el mapa. Si el DM Pulsa sobre una ficha en el mapa o en la lsita, 
-        en la parte de abajo de la barra saldra la informacion de cada ficha en formato de texto el cual el DM puede modificar cuando quiera.
-        Debajo de este panel habra un boton el cual el usuario DM sera el unico que pueda interactuar con el, este boton le permitira cambiar el mapa que aparece en el panel de arriba.
-        Lo siguiente que encontramos es un panel en el que se mostraran los mensages mandados en dicha campaña y una barra en la que podemos
-        escribir el mensage que queramos mandar, para mandarlo hay un boton a la derecha que mandara el mensage al foro para que el 
+        En esta página los usuario podrán usar sus mapas y persoanjes para poder jugar. Habrá un panel cuadriculado en el que el DM puede poner sus mapas para la campaña y 
+        donde podrá crear fichas que serbiran como NPCs. Cada personaje de los jugadores tendra su propia ficha la cual solo ellos o el DM pueden mover. 
+        El DM sera el único que pueda mover las fichas de NPCs. A la derecha del panel habrá una bara lateral la cual solo el DM podrá ver e interactuar con ella. 
+        En esta barra habrá un botón que creará una nueva ficha en el mapa, y una lista con todas las fichas en el mapa. Si el DM Pulsa sobre una ficha en el mapa o en la lista, 
+        en la parte de abajo de la barra saldrá la informacion de cada ficha en formato de texto el cual el DM puede modificar cuando quiera.
+        Debajo de este panel habrá un botón el cual el usuario DM sera el único que pueda interactuar con él, este botón le permitirá cambiar el mapa que aparece en el panel de arriba.
+        Lo siguiente que encontramos es un panel en el que se mostrarán los mensajes mandados en dicha campaña y una barra en la que podemos
+        escribir el mensaje que queramos mandar, para mandarlo hay un botón a la derecha que mandará el mensaje al foro para que el 
         resto de usuarios lo puedan ver.
     </p>
+    </ol>
 </body>
 </html>

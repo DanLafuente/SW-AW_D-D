@@ -1,3 +1,21 @@
+body {
+   font-family: sans-serif;
+}
+header {
+   text-align: center;
+   font-size: 40px;
+   background-color: black;
+   color: white;
+}
+footer {
+   background-color: #777;
+   padding: 10px;
+   text-align: center;
+   color: white;
+}
+li {
+   display: inline;
+}
 table {
     width: 100%;
     border: 1px solid #000;
