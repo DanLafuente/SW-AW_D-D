@@ -4,39 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeon's Home</title>
-    <style>
-        body{
-            font-family: sans-serif;
-        }
-        header {
-            text-align: center;
-            font-size: 40px;
-            background-color: black;
-            color: white;
-        }
-        header img{
-            height: 128px;
-            width: 128px;
-        }
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        footer {
-            background-color: #777;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-        footer li{
-            display: inline;
-        }
-    </style>
+    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
 
 <body>
-    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png"></header>
+    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height="128" width= "128"></header>
     <footer>
         <ul><li><a href="index.html">Inicio</a></li>
             <li><a href="detalles.html">Detalles</a></li>
@@ -50,10 +22,10 @@
         
             <p> El oráculo hablará a los dioses por tí. Muestra tus suplicas.</p>
             <form action="mailto:correoDH@ejemplo.com">
-                <p><label for="fname">Nombre:</label><br>
+                <p><label for="Nombre">Nombre:</label><br>
                     <input type="text" id="Nombre" name="Contname" value=""></p>
 
-                <p><label for="lname">Email del contacto:</label><br>
+                <p><label for="correoinvocador">Email del contacto:</label><br>
                 <input type="email" id="correoinvocador" name="Conte-m" value=""></p>
 
                 <p><label>Motivo de invocación:</label>
@@ -68,7 +40,7 @@
                 <label for="terminos"> He leido todos los términos y condiciones.</label></p>
 
                 <p><label for="consulta">Consulta:</label>
-                    <textarea id="consulta" name="consulta" rows="8" cols = "35"></textarea>
+                    <textarea id="consulta" name="consulta" rows="8" cols = "100"></textarea>
                 
 
 
