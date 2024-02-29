@@ -6,7 +6,7 @@
     <title>Bocetos</title>
     <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
-<header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height="128" width= "128"></header>
+<header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128"></header>
 <footer>
     <ul><li><a href="index.php">Inicio</a></li>
         <li><a href="bocetos.php">Bocetos</a></li>
