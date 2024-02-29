@@ -8,15 +8,7 @@
 </head>
 
 <body>
-    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128"></header>
-    <footer>
-        <ul><li><a href="detalles.html">Detalles</a></li>
-            <li><a href="bocetos.html">Bocetos</a></li>
-            <li><a href="Miembros.html">Miembros</a></li>
-            <li><a href="planificacion.html">Planificacion</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-    </footer>
+    <?php require 'includes/vistas/commun/cabecera.php'; ?>
     <h1>INICIO</h1>
     <h2>BIENVENIDO A LA HOGUERA</h2>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height= "512" width= "512">
@@ -27,6 +19,3 @@
     <p>También podrás hablar con otra gente a través de los foros y incluso unirte a sus campañas. Y si no sabes que hace una raza o una
         clase, también la podrás consultar en nuestra página para crear a tu personaje.
     </p>
-
-</body>
-</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,7 @@
     <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
 <body>
-    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128"></header>
-    <footer>
-        <ul><li><a href="index.html">Inicio</a></li>
-            <li><a href="detalles.html">Detalles</a></li>
-            <li><a href="Miembros.html">Miembros</a></li>
-            <li><a href="planificacion.html">Planificacion</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-    </footer>
+<?php require 'includes/vistas/commun/cabecera.php'; ?>
     <h1>Bocetos</h1>
     <h2 id="PP">Pantalla principal</h2>
     <img src = "img/boceto_pagina_principal.jpeg" alt="DH_index_SKETCH" width= "360" height= "500">

@@ -9,15 +9,7 @@
 
     <body>
         <!--Encabezado-->
-        <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height="128" width= "128"></header>
-        <footer>
-            <ul><li><a href="index.html">Inicio</a></li>
-                <li><a href="detalles.html">Detalles</a></li>
-                <li><a href="bocetos.html">Bocetos</a></li>
-                <li><a href="Miembros.html">Miembros</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-        </footer>
+        <?php require 'includes/vistas/commun/cabecera.php'; ?>
 
         <!--Tabla de la planificación-->
         <!--Descripcion-->
