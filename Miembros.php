@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Miembros</title>
-        <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
+        <link id="estilo" rel="stylesheet" type="text/css" href="csses/miembros.css" />
     </head>
 
     <body>
@@ -20,20 +20,27 @@
 
                 </ol>
             <!--Lista de miembros del equipo de desarrollo-->
-                <ol><li id="DanielLafuenteBazo">Daniel Lafuente Bazo
-                        <dl><dt>Nombre: Daniel Lafuente Bazo</dt>
+            <ol><li id="DanielLafuenteBazo">Daniel Lafuente Bazo
+                        <dl><dt>Nombre</dt>
+                            <dd>Daniel Lafuente Bazo</dd>
                         <dt>Correo de contacto: danlafue@ucm.es</dt>
-                        <dt>Imagen de Daniel: <img src="img/dani.jpg" height="370" width="550"></dt>
-                        <dt>Historia: Un gran y atrevido emprendedor en el mundo Web y sus CSSes.
-                            Mensaje: "Ya no se si son leds o está ardiendo la CPU."</dt>
+                        <dt>Imagen de Daniel:</dt>
+                            <dd><img src="img/dani.jpg" alt="Pueblerino" height="370" width="550"></dd>
+                        <dt>Historia:</dt>
+                            <dd>Un gran y atrevido emprendedor en el mundo Web y sus CSSes.
+                            Mensaje: "Ya no se si son leds o está ardiendo la CPU."</dd>
                         </dl>
                     </li>
-                    <li id="HugoVivacioFernandez">Hugo Vivacio Fernandez</h3>
-                        <dl><dt>Nombre: Hugo Vivacio Fernandez</dt>
-                        <dt>Correo de contacto: hvivanco@ucm.es</dt>
-                        <dt>Imagen de Hugo: <img src="img/hugo.jpg" height="300" width="500"></dt>
-                        <dt>Historia: Aquí os presento a nuestro gran maravilloso Dungeon Master que tuvo esta gran idea en primer lugar. 
-                            Mensaje: "F, por nuestro Dundeons Master. F de FURRO."</dt>
+                    <li id="HugoVivacioFernandez">Hugo Vivacio Fernandez
+                        <dl><dt>Nombre:</dt>
+                            <dd>Hugo Vivacio Fernandez</dd>
+                        <dt>Correo de contacto:</dt>
+                            <dd>hvivanco@ucm.es</dd>
+                        <dt>Imagen de Hugo:</dt>
+                            <dd><img src="img/hugo.jpg" alt="Furro" height="300" width="500"></dd>
+                        <dt>Historia:</dt>
+                            <dd>Aquí os presento a nuestro gran maravilloso Dungeon Master que tuvo esta gran idea en primer lugar. 
+                            Mensaje: "F, por nuestro Dundeons Master. F de FURRO."</dd>
                         </dl>
                     </li>
                     <li id="JaimeIsarMuñoz">Jaime Isar Muñoz
@@ -54,6 +61,3 @@
                     </li>
                 </ol>
 
-
-    </body>
-</html>

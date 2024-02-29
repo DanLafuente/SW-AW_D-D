@@ -7,7 +7,8 @@
     <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
 <body>
-    <?php require 'includes/vistas/commun/cabecera.php'; ?>
+
+<?php require 'includes/vistas/commun/cabecera.php'; ?>
     
     <h1>DETALLES</h1>
     <p>
