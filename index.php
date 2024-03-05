@@ -1,3 +1,6 @@
+<?php 
+require_once 'includes/configuracion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 </head>
 
 <body>
-    <?php require 'includes/vistas/commun/cabecera.php'; ?>
+    <?php require  RUTA_VIEW . '/commun/cabecera.php'; ?>
     <h1>INICIO</h1>
     <h2>BIENVENIDO A LA HOGUERA</h2>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height= "512" width= "512">

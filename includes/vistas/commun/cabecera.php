@@ -1,5 +1,9 @@
 
-<?php require_once __DIR__.'/../helpers/usuarios.php';?>
+<?php 
+//require_once dirname(dirname(__DIR__)).'/configuracion.php';
+//require_once RUTA_Usuario.'/Memoria/usuarios.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
