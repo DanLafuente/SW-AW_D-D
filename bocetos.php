@@ -7,18 +7,10 @@
     <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
 <body>
-    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height="128" width= "128"></header>
-    <footer>
-        <ul><li><a href="index.html">Inicio</a></li>
-            <li><a href="detalles.html">Detalles</a></li>
-            <li><a href="Miembros.html">Miembros</a></li>
-            <li><a href="planificacion.html">Planificacion</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-    </footer>
+<?php require 'includes/vistas/commun/cabecera.php'; ?>
     <h1>Bocetos</h1>
     <h2 id="PP">Pantalla principal</h2>
-    <img src = "img/boceto_pagina_principal.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_pagina_principal.jpeg" alt="DH_index_SKETCH" width= "360" height= "500">
     <p>Desde la página principal se puede navegar hasta el resto de páginas. Lo primero que encontramos es el panel de campañas, 
         en este panel podremos crear camapañas, además nos saldran en formato de lista las capañas activas en las que estamos primero, y despues capañas a las que nos podríamos unir.
         Para entrar a las campañas basta con clicar en el nombre de la campaña.
@@ -30,13 +22,13 @@
         al resto de enlaces y páginas.
     </p>
     <h2 id="BL">Barra lateral</h2>
-    <img src = "img/boceto_barra_lateral.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_barra_lateral.jpeg" alt="DH_barra_lateral" width= "360" height= "500">
     <p>La barra lateral nos dará aceso a una variedad de enlaces. Tiene un enlace a la página principal, a la información de las razas y 
         de las clases y también tendra enlaces a las páginas de <a href="#PJs">"Tus personajes"</a> y de <a href="#Maps">"Tus mapas"</a> además de enlaces a las campañas en las que esta el usuario.
         Tambien tendrán acceso a una página en la que se explica como jugar a Dungeons and Dragons 5 edition en formato de texto.
     </p>
     <h2 id="PJs">Tus personajes</h2>
-    <img src = "img/boceto_tus_personajes.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_tus_personajes.jpeg" alt="DH_users_characters" width= "360" height= "500">
     <p>En esta página puedes organizar y editar los personajes que has creado.
         Lo primero que nos encontramos es un botón en el que pone "Nuevo personaje" el cual nos llevará a la página de 
         <a href="#CreacionPJs">creación de personajes</a>. Debajo de este botón hay un buscador y filtros que puedes usar para buscar a un personaje entre 
@@ -45,18 +37,18 @@
         Junto a cada panel habrá un botón con el que podemos eliminar dicho personaje y otro con el que podemos editarlo.
     </p>
     <h2 id="CreacionPJs">Creación de personajes</h2>
-    <img src = "img/boceto_creacion_personajes.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_creacion_personajes.jpeg" alt="character_design_page" width= "360" height= "500">
     <p>En esta página se exponene las opciones que tiene el usuario a la hora de crear el personaje en forma de formulario, una vez acabado el "formulario"
         el personaje se guardará y ya se podrá usar en las campañas.
     </p>
     <h2 id="EdicionPJs">Edicion de personajes</h2>
-    <img src = "img/boceto_edicion_personajes.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_edicion_personajes.jpeg" alt="character_edition_page" width= "360" height= "500">
     <p>En esta página el usuario sera capaz de editar la informacion de su personaje, podrá cambiar la raza, la clase, el nivel, etc...
         Una vez acabado de editar su personaje el usuario debe pulsar el botón de guardado que se encuentra al final de la página y te devuelve a la 
         página de <a href="#PJs">"Tus personajes"</a>.
     </p>
     <h2 id="Maps">Tus mapas</h2>
-    <img src = "img/boceto_tus_mapas.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_tus_mapas.jpeg" alt="users_maps_page" width= "360" height= "500">
     <p>
         En esta página puedes organizar y editar los mapas que has creado.
         Lo primero que nos encontramos es un botón en el que pone "Nuevo mapa" el cual nos llevará a la página de 
@@ -66,7 +58,7 @@
         Junto a cada panel habrá un botón con el que podemos eliminar dicho mapa.
     </p>
     <h2 id="CrEdMaps">Creación/edición de mapas</h2>
-    <img src = "img/boceto_creacion_mapas.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_creacion_mapas.jpeg" alt="new_maps_page" width= "360" height= "500">
     <p>
         En esta página se crean o se editan los mapas que ya tienes.
         Lo primero que nos encontramos es que tenemos que poner el nombre del mapa y su tamaño, justo debajo de eso encontramos un panel cuadriculado.
@@ -74,7 +66,7 @@
         Al final de la página encontramos un botón de guardado que al pulsarlo nos llevará a la página de  <a href="#Maps">"Tus mapas"</a>.
     </p>
     <h2 id="Races">Razas</h2>
-    <img src = "img/boceto_razas.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_razas.jpeg" alt="races_page" width= "360" height= "500">
     <p>
         En esta página se muestra la información de cada raza en forma de paneles en las que hay una pequeña imagen de la raza 
         y donde se explican brevemente su historia y las características que tienen,
@@ -82,14 +74,14 @@
         Cuando clicamos en una raza nos llevará a otra página en la que se describe más detalladamente cada raza en formato de texto.
     </p>
     <h2 id="Class">Clases</h2>
-    <img src = "img/boceto_clases.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_clases.jpeg" alt="classes_page" width= "360" height= "500">
     <p>
         En esta página se muestra la información de cada clase en forma de paneles en las que hay una pequeña imagen de la clase 
         y donde se explica brevemente de que trata la clase, tambien habrá una pequeña lista donde se listarán las subclases que tiene cada clase.
         Cuando clicamos en una clase nos llevará a otra página en la que se describe más detalladamente cada clase en formato de texto.
     </p>
     <h2 id="Forums">Foros</h2>
-    <img src = "img/boceto_foro.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_foro.jpeg" alt="forum_page" width= "360" height= "500">
     <p>
         En esta página los usuarios podrán hablar todos juntos. Lo primero que nos encontramos es el nombre del foro 
         y una descripción que explica de que se va a hablar en el foro. Tambien se indicará que usuario creó el foro.
@@ -98,7 +90,7 @@
         resto de usuarios lo puedan ver.
     </p>
     <h2 id="Campañas">Campañas</h2>
-    <img src = "img/boceto_campaña.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_campaña.jpeg" alt="campaign_page" width= "360" height= "500">
     <p>
         En esta página los usuarios podrán unirse a la campaña, además de poder comunicarse entre ellos.
         Lo primero que encontramos es el nombre de la campaña y la descripción de esta en la que se explicara la historia de la campaña
@@ -114,7 +106,7 @@
         llevará al <a href="#TV">tablero virtual</a> de la campaña.
     </p>
     <h2 id="TV">Tablero Virtual</h2>
-    <img src = "img/boceto_tablero_virtual.jpeg" width= "360" height= "500">
+    <img src = "img/boceto_tablero_virtual.jpeg" alt="VT_page" width= "360" height= "500">
     <p>
         En esta página los usuario podrán usar sus mapas y persoanjes para poder jugar. Habrá un panel cuadriculado en el que el DM puede poner sus mapas para la campaña y 
         donde podrá crear fichas que serbiran como NPCs. Cada personaje de los jugadores tendra su propia ficha la cual solo ellos o el DM pueden mover. 
