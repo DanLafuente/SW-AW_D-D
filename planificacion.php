@@ -55,7 +55,7 @@
                 <td colspan=2></td> <!--Semanas 11 al 12-->
             </tr>
             <!--Tarea 3: Httml-->
-            <tr><th rowspan=13>Httml</th><!--rowspan a de ser nElemenos+1 (12+1)-->
+            <tr><th rowspan=13 colspan=1>Httml</th></tr><!--rowspan a de ser nElemenos+1 (12+1)-->
                 <!--Tarea 3.1: Httml.index-->
                 <tr><th>index</th>
                     <td colspan=2>X</td> <!--Semanas 1 al 2-->
@@ -164,9 +164,8 @@
                     <td colspan=2>X</td> <!--Semanas 9 al 10-->
                     <td colspan=2>X</td> <!--Semanas 11 al 12-->
                 </tr>
-            </tr>
             <!--Tarea 4: CSS-->
-            <tr><th rowspan=6>CSS</th><!--rowspan a de ser nElemenos+1 (5+1)-->
+            <tr><th rowspan=6 colspan=1>CSS</th></tr><!--rowspan a de ser nElemenos+1 (5+1)-->
                 <!--Tarea 4.1: CSS.index-->
                 <tr><th>index</th>
                     <td colspan=2></td> <!--Semanas 1 al 2-->
@@ -212,7 +211,6 @@
                     <td colspan=2>X</td> <!--Semanas 9 al 10-->
                     <td colspan=2>X</td> <!--Semanas 11 al 12-->
                 </tr>
-            </tr>
             </tbody>
         </table>
     </body>
