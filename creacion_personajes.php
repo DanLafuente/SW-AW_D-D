@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +11,14 @@
 </head>
 <body>
     <main>
-        <article>
-            <form action="http://localhost/Ej2_P2/procesar_persoanje.php" method="post">
+            <form action="http://localhost/SW-AW_D-D/crearpersonaje_paso2.php" method="post">
             <p>
             <label>Nombre del presonaje</label>
             <input id="nombre" type="text" name="nombre_personaje" value="" />
             </p>
             <p>
             <label>Nivel del presonaje</label>
-            <input id="nivel" type="text" name="nivel_personaje" value="" />
+            <input id="nivel" type="number" name="nivel_personaje" value="" />
             </p>
             <p>
 
@@ -35,52 +38,56 @@
             <p>
             <label>Clase</label>
             <select name="Clase">
-                <option value="Bárbaro"selected>barbaro</option>
-                <option value="Bardo">bardo</option>
-                <option value="Brujo">brujo</option>
-                <option value="Clerigo">clerigo</option>
-                <option value="Druida">druida</option>
-                <option value="Explorador">explorador</option>
-                <option value="Guerrero">guerrero</option>
-                <option value="Hechicero">Hechicero</option>
-                <option value="Mago">mago</option>
-                <option value="Monje">monje</option>
-                <option value="Paladin">paladin</option>
-                <option value="Picaro">picaro</option>
+                <option value="barbaro"selected>Bárbaro</option>
+                <option value="bardo">Bardo</option>
+                <option value="brujo">Brujo</option>
+                <option value="clerigo">Clerigo</option>
+                <option value="druida">Druida</option>
+                <option value="explorador">Explorador</option>
+                <option value="guerrero">Guerrero</option>
+                <option value="hechicero">Hechicero</option>
+                <option value="mago">Mago</option>
+                <option value="monje">Monje</option>
+                <option value="paladin">Paladin</option>
+                <option value="picaro">Picaro</option>
             </select>
             </p>
             <p>
             <label>Raza</label>
             <select name="Raza">
-                <option value="Enano"selected>enano</option>
-                <option value="Elfo">elfo</option>
-                <option value="Mediano">mediano</option>
-                <option value="Humano">humano</option>
-                <option value="Draconico">draconico</option>
-                <option value="Gnomo">gnomo</option>
-                <option value="Semielfo">semielfo</option>
-                <option value="Semiorco">semiorco</option>
-                <option value="Tiflin">tiflin</option>
+                <option value="enano"selected>Enano</option>
+                <option value="elfo">Elfo</option>
+                <option value="mediano">Mediano</option>
+                <option value="humano">Humano</option>
+                <option value="draconico">Draconico</option>
+                <option value="gnomo">Gnomo</option>
+                <option value="semielfo">Semielfo</option>
+                <option value="semiorco">Semiorco</option>
+                <option value="tiflin">Tiflin</option>
 
             </select>
             </p>
             <p>
             <label>Transfondo</label>
-            <select name="Raza">
-                <option value="Enano"selected>enano</option>
-                <option value="Elfo">elfo</option>
-                <option value="Mediano">mediano</option>
-                <option value="Humano">humano</option>
-                <option value="Draconico">draconico</option>
-                <option value="Gnomo">gnomo</option>
-                <option value="Semielfo">semielfo</option>
-                <option value="Semiorco">semiorco</option>
-                <option value="Tiflin">tiflin</option>
-
+            <select name="Transfondo">
+                <option value="acolito"selected>Acolito</option>
+                <option value="artesano gremial">Artesano Gremial</option>
+                <option value="artista">Artista</option>
+                <option value="charlatan">Charlatán</option>
+                <option value="criminal">Criminal</option>
+                <option value="ermitaño">Ermitaño</option>
+                <option value="forastero">Forastero</option>
+                <option value="heroe del pueblo">Héroe del Pueblo</option>
+                <option value="huerfano">Huérfano</option>
+                <option value="marinero">Marinero</option>
+                <option value="noble">Noble</option>
+                <option value="sabio">Sabio</option>
+                <option value="soldado">Soldado</option>
             </select>
             </p>
             <input type="submit" value="Enviar" />
-        </article>
+            
     </main>
 </body>
 </html>
+
