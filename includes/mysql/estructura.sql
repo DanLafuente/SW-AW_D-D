@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-03-2024 a las 15:54:31
+-- Tiempo de generación: 09-03-2024 a las 11:25:00
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -172,6 +172,12 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `descripcion`
+--
+ALTER TABLE `descripcion`
+  MODIFY `descripcion` int(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `estadisticas`
 --
 ALTER TABLE `estadisticas`
@@ -182,6 +188,12 @@ ALTER TABLE `estadisticas`
 --
 ALTER TABLE `ficha`
   MODIFY `ID_F` int(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `habilidades`
+--
+ALTER TABLE `habilidades`
+  MODIFY `habilidades` int(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
