@@ -11,7 +11,7 @@ require_once 'includes/configuracion.php';
 </head>
 
 <body>
-    <?php require  RUTA_VIEW . '/commun/cabecera.php'; ?>
+    <?php require_once  RUTA_VIEW . '/commun/cabecera.php'; ?>
     <h1>INICIO</h1>
     <h2>BIENVENIDO A LA HOGUERA</h2>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height= "512" width= "512">
@@ -22,3 +22,5 @@ require_once 'includes/configuracion.php';
     <p>También podrás hablar con otra gente a través de los foros y incluso unirte a sus campañas. Y si no sabes que hace una raza o una
         clase, también la podrás consultar en nuestra página para crear a tu personaje.
     </p>
+</body>
+</html>

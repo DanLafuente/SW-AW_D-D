@@ -9,6 +9,8 @@ define('RUTA_IMGS', RUTA_APP . '/img');
 define('RUTA_CSS', RUTA_APP . '/csses');
 define('RUTA_SRS', RUTA_APP . '/includes/src');
     define('RUTA_Usuario', RUTA_SRS . '/Usuarios');
+    define('RUTA_personajes', RUTA_SRS . '/modulo_personaje');
+
 define('RUTA_VIEW', RUTA_APP . '/includes/vistas'); 
 //define('RUTA_JS', RUTA_APP . '/js');
 define('INSTALADA', false);
