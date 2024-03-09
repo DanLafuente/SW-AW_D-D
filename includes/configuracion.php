@@ -39,19 +39,16 @@ date_default_timezone_set('Europe/Madrid');
 /* */
 /* Clases y Traits de la aplicación */
 /* */
-
-/* */
-/* Clases que simulan una BD almacenando los datos en memoria */
-/* */ 
+require_once 'src/Arrays.php';
+require_once 'src/traits/MagicProperties.php';
 
 /**/ 
 /* Configuramos e inicializamos la sesión para todas las peticiones*/
 /* */
 
-/* */
-/* Inicialización de las clases que simulan una BD en memoria */
-/* */
 
 /* */
 /* Clases que usan una BD para almacenar el estado */
 /* */
+require_once 'src/BD.php';
+require_once 'src/Usuarios/usuarioBD.php';
