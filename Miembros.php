@@ -8,7 +8,7 @@
     </head>
 
     <body>
-    <?php require 'includes/vistas/commun/cabecera.php'; ?>
+    <?php require 'includes/vistas/commun/layout.php'; ?>
 
         <!--Hoja-->
             <!--Lateral con referencias-->

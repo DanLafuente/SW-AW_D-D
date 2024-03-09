@@ -20,6 +20,5 @@
         <li><a href="Miembros.php">Miembros</a></li>
         <li><a href="planificacion.php">Planificacion</a></li>
         <li><a href="contactos.php">Contactos</a></li>
-        <li><?= saludo() ?></li>
     </ul>
 </footer>
