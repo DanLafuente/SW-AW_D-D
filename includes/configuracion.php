@@ -8,16 +8,16 @@ define('RUTA_APP', '/SW-AW_D-D');
 define('RUTA_IMGS', RUTA_APP . '/img');
 define('RUTA_CSS', RUTA_APP . '/csses');
 define('RUTA_SRS', RUTA_APP . '/includes/src');
-    define('RUTA_Usuario', RUTA_SRS . '/Usuarios');
+define('RUTA_Usuario', RUTA_SRS . '/Usuarios');
 define('RUTA_VIEW', RUTA_APP . '/includes/vistas'); 
 //define('RUTA_JS', RUTA_APP . '/js');
 define('INSTALADA', false);
 
 // Parámetros de configuración de la BD
 define('BD_HOST', 'localhost');
-define('BD_NAME', '');
-define('BD_USER', '');
-define('BD_PASS', '');
+define('BD_NAME', 'SW-AW_D-D');
+define('BD_USER', 'SW-AW_D-D');
+define('BD_PASS', 'SW-AW_D-D');
 
 
 /* */
@@ -39,6 +39,7 @@ date_default_timezone_set('Europe/Madrid');
 /* */
 /* Clases y Traits de la aplicación */
 /* */
+require_once 'src/Arrays.php';
 
 /* */
 /* Clases que simulan una BD almacenando los datos en memoria */
@@ -47,6 +48,9 @@ date_default_timezone_set('Europe/Madrid');
 /**/ 
 /* Configuramos e inicializamos la sesión para todas las peticiones*/
 /* */
+session_start([
+	'cookie_path' => RUTA_APP, // Para evitar problemas si tenemos varias aplicaciones en htdocs
+]);
 
 /* */
 /* Inicialización de las clases que simulan una BD en memoria */
@@ -55,3 +59,4 @@ date_default_timezone_set('Europe/Madrid');
 /* */
 /* Clases que usan una BD para almacenar el estado */
 /* */
+require_once 'src/BD.php';
