@@ -10,16 +10,14 @@ define('RUTA_CSS', RUTA_APP . '/csses');
 define('RUTA_SRS', RUTA_APP . '/includes/src');
 define('RUTA_Usuario', RUTA_SRS . '/Usuarios');
 define('RUTA_personajes', RUTA_SRS . '/Personajes');
-
 define('RUTA_VIEW', RUTA_APP . '/includes/vistas'); 
-//define('RUTA_JS', RUTA_APP . '/js');
-define('INSTALADA', false);
+define('INSTALADA', true);
 
 // Parámetros de configuración de la BD
 define('BD_HOST', 'localhost');
-define('BD_NAME', '');
-define('BD_USER', '');
-define('BD_PASS', '');
+define('BD_NAME', 'SW-AW_D-D');
+define('BD_USER', 'SW-AW_D-D');
+define('BD_PASS', 'SW-AW_D-D');
 
 
 /* */
@@ -41,12 +39,19 @@ date_default_timezone_set('Europe/Madrid');
 /* */
 /* Clases y Traits de la aplicación */
 /* */
+
+/* */
+/* Clases que simulan una BD almacenando los datos en memoria */
+/* */ 
 require_once 'src/Arrays.php';
 require_once 'src/traits/MagicProperties.php';
 
 /**/ 
 /* Configuramos e inicializamos la sesión para todas las peticiones*/
 /* */
+session_start([
+	'cookie_path' => RUTA_APP, // Para evitar problemas si tenemos varias aplicaciones en htdocs
+]);
 
 
 /* */
