@@ -12,8 +12,10 @@ function saludo()
         EOS;
     } else {
         $urlLogin = Utils::buildUrl('/login.php');
+        $urlCrearUsuario = Utils::buildUrl('/CrearUsuario.php');
         $html = <<<EOS
         Usuario desconocido. <a href="{$urlLogin}">Login</a>
+        o <a href="{$urlCrearUsuario}">Crear un Usuario</a>
         EOS;
     }
 
