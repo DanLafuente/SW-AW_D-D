@@ -22,6 +22,7 @@
     <title>Document</title>
 </head>
 <body>
+<?php require 'includes/vistas/commun/layout.php'; ?>
 <main>
         <article>
             <form action="http://localhost/SW-AW_D-D/crearpersonaje_paso3.php" method="post">

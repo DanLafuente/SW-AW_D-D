@@ -1,7 +1,7 @@
 <?php
 
 require_once 'includes/configuracion.php';
-require 'includes/vistas/commun/layout.php';
+
 
 $tituloPagina = 'indexhola';
 $contenidoPrincipal=<<<EOS
@@ -16,7 +16,7 @@ $contenidoPrincipal=<<<EOS
         clase, también la podrás consultar en nuestra página para crear a tu personaje.
     </p>
     EOS;
-
+    require 'includes/vistas/commun/layout.php';
 
 
 

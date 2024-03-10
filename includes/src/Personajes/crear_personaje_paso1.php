@@ -1,11 +1,6 @@
-<?php
-    session_start();
-    //require_once dirname(dirname(__DIR__)).'/vistas/commun/cabecera.php';
-?>
-
 <!DOCTYPE html>
 <body>
-    <?php// require_once dirname(dirname(__DIR__)).'/vistas/commun/cabecera.php'; ?>
+    <?php require_once dirname(dirname(__DIR__)).'/vistas/commun/cabecera.php'; ?>
 
     <main>
             <form action="http://localhost/SW-AW_D-D/includes/src/Personajes/crear_personaje_paso2.php" method="post">
