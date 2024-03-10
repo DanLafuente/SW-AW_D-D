@@ -1,12 +1,12 @@
 
 <?php 
-//require_once dirname(dirname(__DIR__)).'/configuracion.php';
-//require_once RUTA_Usuario.'/Memoria/usuarios.php'
+require_once dirname(dirname(__DIR__)).'/configuracion.php';
+require_once dirname(__DIR__).'/helpers/usuariosHelp.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bocetos</title>
@@ -20,6 +20,8 @@
         <li><a href="Miembros.php">Miembros</a></li>
         <li><a href="planificacion.php">Planificacion</a></li>
         <li><a href="contactos.php">Contactos</a></li>
+        <li><a href="http://localhost/SW-AW_D-D/includes/src/Personajes/crear_personaje_paso1.php">Tus personajes</a></li>
         <li><?= saludo() ?></li>
     </ul>
 </footer>
+

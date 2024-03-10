@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Miembros</title>
-        <link id="estilo" rel="stylesheet" type="text/css" href="csses/miembros.css" />
-    </head>
+<?php
 
-    <body>
-    <?php require 'includes/vistas/commun/cabecera.php'; ?>
+require_once 'includes/configuracion.php';
+
+
+$tituloPagina = 'indexhola';
+$contenidoPrincipal=<<<EOS
 
         <!--Hoja-->
             <!--Lateral con referencias-->
@@ -68,4 +64,6 @@
                         </dl>
                     </li>
                 </ol>
+        EOS;
+        require 'includes/vistas/commun/layout.php';
 

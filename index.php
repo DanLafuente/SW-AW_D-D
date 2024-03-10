@@ -1,17 +1,10 @@
-<?php 
-require_once 'includes/configuracion.php';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon's Home</title>
-    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
-</head>
+<?php
 
-<body>
-    <?php require  RUTA_VIEW . '/commun/cabecera.php'; ?>
+require_once 'includes/configuracion.php';
+
+
+$tituloPagina = 'indexhola';
+$contenidoPrincipal=<<<EOS
     <h1>INICIO</h1>
     <h2>BIENVENIDO A LA HOGUERA</h2>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height= "512" width= "512">
@@ -22,3 +15,10 @@ require_once 'includes/configuracion.php';
     <p>También podrás hablar con otra gente a través de los foros y incluso unirte a sus campañas. Y si no sabes que hace una raza o una
         clase, también la podrás consultar en nuestra página para crear a tu personaje.
     </p>
+    EOS;
+    require 'includes/vistas/commun/layout.php';
+
+
+
+
+

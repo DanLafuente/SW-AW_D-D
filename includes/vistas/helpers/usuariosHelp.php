@@ -1,6 +1,5 @@
 <?php
-//require_once dirname(dirname(dirname(__DIR__))).'/configuracion.php';
-//require_once RUTA_VIEW .'/helpers/autorizacion.php';
+require_once 'autorizacion.php';
 
 function saludo()
 {
@@ -9,12 +8,14 @@ function saludo()
     if (estaLogado()) {
         $urlLogout = Utils::buildUrl('/logout.php');
         $html = <<<EOS
-        Bienvenido, {$_SESSION['nombre']} <a href="{$urlLogout}">(salir)</a>
+        Bienvenido, {$_SESSION['nombreUsuario']} <a href="{$urlLogout}">(salir)</a>
         EOS;
     } else {
         $urlLogin = Utils::buildUrl('/login.php');
+        $urlCrearUsuario = Utils::buildUrl('/CrearUsuario.php');
         $html = <<<EOS
         Usuario desconocido. <a href="{$urlLogin}">Login</a>
+        o <a href="{$urlCrearUsuario}">Crear un Usuario</a>
         EOS;
     }
 
@@ -26,8 +27,9 @@ function logout()
     //Doble seguridad: unset + destroy
     unset($_SESSION['idUsuario']);
     unset($_SESSION['roles']);
-    unset($_SESSION['nombre']);
-    
+    unset($_SESSION['nombreUsuario']);
+    //unset(_SESSION['contaseña'])
+
     session_destroy();
     session_start();
 }

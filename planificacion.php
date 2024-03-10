@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Planificación</title>
-        <link id="estilo" rel="stylesheet" type="text/css" href="csses/tabla.css" />
-    </head>
+<?php
 
-    <body>
-        <!--Encabezado-->
-        <?php require 'includes/vistas/commun/cabecera.php'; ?>
+require_once 'includes/configuracion.php';
+
+
+$tituloPagina = 'indexhola';
+$contenidoPrincipal=<<<EOS
 
         <!--Tabla de la planificación-->
         <!--Descripcion-->
@@ -213,5 +208,5 @@
                 </tr>
             </tbody>
         </table>
-    </body>
-</html>
+EOS;
+require 'includes/vistas/commun/layout.php';
