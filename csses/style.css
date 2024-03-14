@@ -29,6 +29,7 @@ ol li{
     font-weight: bold;
     font-size: 30px;
 } 
+
 div#contenedor {
 	width: 900px;
 	margin: auto;
@@ -37,9 +38,6 @@ div#contenedor {
 	margin-top: 30px;
 } 
 
-li {
-    display: inline;
- }
  table {
      width: 100%;
      border: 1px solid #000;
@@ -59,7 +57,11 @@ li {
      caption-side: top;
      padding: 0.3em;
   }
+
 form.formlogin{
-    text-align:right;
+    text-align:center;
     font-size: 15px;
+}
+form.formtitule{
+    text-align:center;
 }

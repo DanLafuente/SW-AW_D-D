@@ -7,7 +7,7 @@ require_once dirname(__DIR__).'/helpers/usuariosHelp.php';
 <!DOCTYPE html>
 <html>
 <header>
-    <?=$tituloPagina?>
+    <form class=formtitule><?=$tituloPagina?></form>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128">
     <form class=formlogin><label><?= saludo() ?></label></form>
 </header>

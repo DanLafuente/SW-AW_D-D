@@ -13,7 +13,6 @@ $contenidoPrincipal=<<<EOS
                     <li> <a href="#HugoVivacioFernandez">Hugo Vivacio Fernandez <img src="img/hugouwu.png" alt="Furro" height="64" width= "64"></a> </li>
                     <li> <a href="#JaimeIsarMuñoz">Jaime Isar Muñoz <img src="img/jimmysaurio.png" alt="Estegosaurio" height="64" width= "64"></a> </li>
                     <li> <a href="#AlejandroRodriguezGiner">Alejandro Rodriguez Giner<img src="img/chuvak.png" alt="Mascota" height="64" width= "64"></a> </li>
-
                 </ol>
             <!--Lista de miembros del equipo de desarrollo-->
             <ol><li id="DanielLafuenteBazo">Daniel Lafuente Bazo
