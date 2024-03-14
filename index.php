@@ -3,7 +3,7 @@
 require_once 'includes/configuracion.php';
 
 
-$tituloPagina = 'indexhola';
+$tituloPagina = "Dungeon's Hub";
 $contenidoPrincipal=<<<EOS
     <h1>INICIO</h1>
     <h2>BIENVENIDO A LA HOGUERA</h2>

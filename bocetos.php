@@ -3,7 +3,7 @@
 require_once 'includes/configuracion.php';
 
 
-$tituloPagina = 'bocetos';
+$tituloPagina = 'Bocetos';
 $contenidoPrincipal=<<<EOS
     <h1>Bocetos</h1>
     <h2 id="PP">Pantalla principal</h2>

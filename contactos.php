@@ -3,7 +3,7 @@
 require_once 'includes/configuracion.php';
 
 
-$tituloPagina = 'indexhola';
+$tituloPagina = 'Contactos';
 $contenidoPrincipal=<<<EOS
     <section>
             <h1>Contactos</h1>

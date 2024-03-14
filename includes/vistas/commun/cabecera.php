@@ -13,7 +13,7 @@ require_once dirname(__DIR__).'/helpers/usuariosHelp.php';
     <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
 </head>
 <header>
-    Dungeon's Hub 
+    <?=$tituloPagina?>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128">
     <form class=formlogin><label><?= saludo() ?></label></form>
 </header>

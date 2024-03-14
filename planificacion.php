@@ -3,7 +3,7 @@
 require_once 'includes/configuracion.php';
 
 
-$tituloPagina = 'indexhola';
+$tituloPagina = 'Planificacion';
 $contenidoPrincipal=<<<EOS
 
         <!--Tabla de la planificación-->
