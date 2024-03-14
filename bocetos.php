@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bocetos</title>
-    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
-</head>
-<body>
-<?php require 'includes/vistas/commun/cabecera.php'; ?>
+<?php
+
+require_once 'includes/configuracion.php';
+
+
+$tituloPagina = 'bocetos';
+$contenidoPrincipal=<<<EOS
     <h1>Bocetos</h1>
     <h2 id="PP">Pantalla principal</h2>
     <img src = "img/boceto_pagina_principal.jpeg" alt="DH_index_SKETCH" width= "360" height= "500">
@@ -118,5 +115,5 @@
         escribir el mensaje que queramos mandar, para mandarlo hay un botón a la derecha que mandará el mensaje al foro para que el 
         resto de usuarios lo puedan ver.
     </p>
-</body>
-</html>
+EOS;
+require 'includes/vistas/commun/layout.php';

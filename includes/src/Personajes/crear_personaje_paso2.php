@@ -1,17 +1,33 @@
 <?php
     session_start();
-    require('procesarpersonaje.php');
+    //require 'includes/vistas/commun/cabecera.php';
+    require('procesar_personajes.php');
     $nombre_personaje = htmlspecialchars(trim(strip_tags($_POST["nombre_personaje"])));
     $nivel_personaje = htmlspecialchars(trim(strip_tags($_POST  ["nivel_personaje"])));
     $alineamiento_personaje = $_POST["Alineamiento"];
     $clase_personaje = $_POST["Clase"];
     $raza_personaje = $_POST["Raza"];
     $transfondo_personaje = $_POST["Transfondo"];
+    $Caracteristicas_personalidad = $_POST["Caracteristicas_personalidad"];
+    $Ideales = $_POST["Ideales"];
+    $Lazos = $_POST["Lazos"];
+    $Fallos = $_POST["Fallos"];
+    $Historia = $_POST["Historia"];
+    $Fuerza = $_POST["Fuerza"];
+    $Dexteridad = $_POST["Dexteridad"];
+    $Constitucion = $_POST["Constitucion"];
+    $Inteligencia = $_POST["Inteligencia"];
+    $Sabiduria = $_POST["Sabiduria"];
+    $Carisma = $_POST["Carisma"];
 
     $personaje = new Personaje();
-
-    Procesar_formulario1($personaje, $raza_personaje, $clase_personaje, $nivel_personaje, $alineamiento_personaje, $transfondo_personaje, $nombre_personaje);
-    //echo "<p>{$_SESSION["creando_personaje"]->getRaza()}</p>";
+    
+    Procesar_formulario1($personaje, $raza_personaje, 
+    $clase_personaje, $nivel_personaje, 
+    $alineamiento_personaje, $transfondo_personaje, 
+    $nombre_personaje, $Caracteristicas_personalidad,
+    $Ideales, $Lazos, $Fallos, $Historia, $Fuerza, $Dexteridad,
+    $Constitucion, $Inteligencia, $Sabiduria, $Carisma);
 ?>
 
 <!DOCTYPE html>
@@ -22,47 +38,50 @@
     <title>Document</title>
 </head>
 <body>
-<<<<<<< HEAD
-=======
-<?php require 'includes/vistas/commun/layout.php'; ?>
->>>>>>> origin/VersionEntrega
 <main>
         <article>
-            <form action="http://localhost/SW-AW_D-D/crearpersonaje_paso3.php" method="post">
+            <form action="http://localhost/SW-AW_D-D/includes/src/Personajes/crear_personaje_paso_final.php" method="post">
 
                 <?php 
                 
                 if($raza_personaje == "enano"){
-                    print(  "<p>
+                    ?>
+                    <p>
                     <label>Subraza</label>
                     <select name='Subraza'>
                         <option value='enano de las colinas'selected>Enano de las colinas</option>
                         <option value='enano de las montañas'>Enano de las Montañas</option>
                     </select>
-                    </p> ");
+                    </p>
+                <?php
                 }
     
                 if($raza_personaje == "elfo"){
-                    print(  "<p>
+                    ?>
+                    "<p>
                     <label>Subraza</label>
                     <select name='Subraza'>
                         <option value='alto elfo'selected>Alto Elfo</option>
                         <option value='elfo de los bosques'>Elfo de los Bosques</option>
                         <option value='elfo oscuro'>Elfo Oscuro (Drow)</option>
                     </select>
-                    </p> ");
+                    </p> "
+                    <?php
                 }
                 if($raza_personaje == "mediano"){
-                    print(  "<p>
+                    ?>
+                    <p>
                     <label>Subraza</label>
                     <select name='Subraza'>
                         <option value='mediano piesligeros'selected>Mediano Piesligeros</option>
                         <option value='mediano fornido'>Mediano Fornido</option>
                     </select>
-                    </p> ");
+                    </p>
+                    <?php
                 }
                 if($raza_personaje == "draconico"){
-                    print(  "<p>
+                    ?>
+                    <p>
                     <label>Ascendencia Dracónica</label>
                     <select name='Subraza'>
                         <option value='azul'selected>Azul (relámpago)</option>
@@ -77,16 +96,19 @@
                         <option value='verde'>Verde (Veneno)</option>
     
                     </select>
-                    </p> ");
+                    </p> 
+                    <?php
                 }
                 if($raza_personaje == "gnomo"){
-                    print(  "<p>
+                    ?>
+                    <p>
                     <label>Subraza</label>
                     <select name='Subraza'>
                         <option value='gnomo del bosque'selected>Gnomo del Bosque</option>
                         <option value='gnomo de la roca'>Gnomo de la Roca</option>
                     </select>
-                    </p> ");
+                    </p>
+                    <?php
                 }
     
     
@@ -112,7 +134,7 @@
                 }
                 
                 if($clase_personaje == "barbaro"){
-                    $personaje->Habilidades_count = 2;
+                    $personaje->setHabilidades_count(2);
                     print( 
                         "<p>Escoja 2 habilidades distintas:</p>
                         
@@ -143,16 +165,16 @@
                         <p>Equipamiento</p>
                         <p>
                         <label>Arma Principal</label>
-                        <select name='Arma Principal'>
-                            <option value='gran hacha'selected>Gran hacha</option>
-                            <option value='arma marcial'>Cualquier arma marcial cuerpo a cuerpo</option>
+                        <select name='Equipamiento1'>
+                            <option value='Gran hacha'selected>Gran hacha</option>
+                            <option value='Cualquier arma marcial cuerpo a cuerpo'>Cualquier arma marcial cuerpo a cuerpo</option>
                         </select>
                         </p>
                         <p>
                         <label>Arma Secundaria</label>
-                        <select name='Arma Secundaria'>
-                            <option value='hachas de mano'selected>Dos hachas de mano</option>
-                            <option value='arma simple'>Cualquier arma simple</option>
+                        <select name='Equipamiento2'>
+                            <option value='Dos hachas de mano'selected>Dos hachas de mano</option>
+                            <option value='Cualquier arma simple'>Cualquier arma simple</option>
                         </select>
                         </p> "
                     );
@@ -180,7 +202,6 @@
                         </p> ");
                     }
                 }
-            print("estas en el paso 2");
             $_SESSION["creando_personaje"] = serialize($personaje);
 
 

@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles</title>
-    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
-</head>
-<body>
+<?php
 
-<?php require 'includes/vistas/commun/cabecera.php'; ?>
+require_once 'includes/configuracion.php';
+
+
+$tituloPagina = 'indexhola';
+$contenidoPrincipal=<<<EOS
     
     <h1>DETALLES</h1>
     <p>
@@ -70,6 +66,5 @@
         último tendrá la función extra de poder ir cambiando de mapas y poder poner las fichas de cada 
         jugador.
     </p>
-
-</body>
-</html>
+    EOS;
+    require 'includes/vistas/commun/layout.php';
