@@ -59,3 +59,7 @@ li {
      caption-side: top;
      padding: 0.3em;
   }
+form.formlogin{
+    text-align:right;
+    font-size: 15px;
+}

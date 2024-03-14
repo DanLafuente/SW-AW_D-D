@@ -39,10 +39,6 @@ date_default_timezone_set('Europe/Madrid');
 /* */
 /* Clases y Traits de la aplicación */
 /* */
-
-/* */
-/* Clases que simulan una BD almacenando los datos en memoria */
-/* */ 
 require_once 'src/Arrays.php';
 require_once 'src/traits/MagicProperties.php';
 
