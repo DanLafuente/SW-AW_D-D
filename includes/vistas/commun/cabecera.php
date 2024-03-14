@@ -5,13 +5,7 @@ require_once dirname(__DIR__).'/helpers/usuariosHelp.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bocetos</title>
-    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
-</head>
+<html>
 <header>
     <?=$tituloPagina?>
     <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128">
