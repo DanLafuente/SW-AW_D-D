@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon's Home</title>
-    <link id="estilo" rel="stylesheet" type="text/css" href="csses/style.css" />
-</head>
+<?php
 
-<body>
-    <header>Dungeon's Hub <img src="img/Dungeon's_Hub.png" height="128" width= "128"></header>
-    <footer>
-        <ul><li><a href="index.html">Inicio</a></li>
-            <li><a href="detalles.html">Detalles</a></li>
-            <li><a href="bocetos.html">Bocetos</a></li>
-            <li><a href="Miembros.html">Miembros</a></li>
-            <li><a href="planificacion.html">Planificacion</a></li>
-        </ul>
-    </footer>
+require_once 'includes/configuracion.php';
+
+
+$tituloPagina = 'indexhola';
+$contenidoPrincipal=<<<EOS
     <section>
             <h1>Contactos</h1>
         
@@ -46,5 +34,5 @@
 
             </form>
     </section>
-</body>
-</html>
+    EOS;
+    require 'includes/vistas/commun/layout.php';

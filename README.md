@@ -1,3 +1,5 @@
 # SW-AW_D-D
 
-Porfavor, si vais a subir algo a la rama main, hacerr un merge antes para los cambios de hiperlink en Miembros y Detalles
+Anotciones:
+    1. Cuando se termine la BD modificar sus cosos en 'configuracion.php' (Varias).
+    2. Tocar pagerror(); en Utils => hablar de la forma general de las paginas.
