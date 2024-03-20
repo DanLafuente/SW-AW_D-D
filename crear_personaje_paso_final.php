@@ -1,11 +1,12 @@
 <?php
-    session_start();
-    require('procesar_personajes.php');
+    //session_start();
+    require_once'includes/configuracion.php' ;
+    require('includes/src/Personajes/procesar_personajes.php');
     $personaje = new Personaje();
     $personaje = unserialize($_SESSION["creando_personaje"]);
 
     $error = false;
-    $mensage_error;
+    $mensage;
     $habilidades = array();
     $habilidad1 = $_POST["Habilidad1"];
     $habilidad2 = $_POST["Habilidad2"];
@@ -24,10 +25,12 @@
             
         }
     }
-    
+    //-----------------------------------
+
+    //mensages-------------------------------------------------
     if(comprobar_habilidades($habilidades, $personaje->getHabilidades_count())){
         $error = true;
-        $mensage_error = "Se repiten dos o mas habilidades";
+        $mensage = "Se repiten dos o mas habilidades";
     }
     //------------------------------------------------------------------
 
@@ -56,11 +59,11 @@
     }
 
     //-----------------------------------------------------------
-
+    //errores--------------------------------
     if($error == true){
-        print ("<p> ERROR {$mensage_error}</p>");
 
     } else{
+        $mensage = "Todo ha salido bien y tu personaje esta listo para ir de aventuras";
         Procesar_formulario2($personaje, $subraza_personaje, $habilidades, $equipamiento);
     }
 
@@ -70,7 +73,12 @@
     
 
     //----------------------------------------------------------------
-    
+
+    $contenidoPrincipal=<<<EOS
+    $mensage
+    EOS;
+    require 'includes/vistas/commun/layout.php';
+
     unset($_SESSION["creando_personaje"]);
 
 ?>
