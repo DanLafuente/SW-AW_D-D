@@ -58,10 +58,11 @@ div#contenedor {
      padding: 0.3em;
   }
 
-form.formlogin{
+form.formlogin {
     text-align:center;
     font-size: 15px;
 }
-form.formtitule{
+form.formtitule {
     text-align:center;
+    font-size: 30px;
 }
