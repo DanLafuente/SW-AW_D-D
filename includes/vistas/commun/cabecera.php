@@ -4,11 +4,9 @@ require_once dirname(dirname(__DIR__)).'/configuracion.php';
 require_once dirname(__DIR__).'/helpers/usuariosHelp.php';
 ?>
 
-<!DOCTYPE html>
-<html>
 <header>
     <form class=formtitule><?=$tituloPagina?></form>
-    <img src="img/Dungeon's_Hub.png" alt="DH_web_icon" height="128" width= "128">
+    <img src=<?= RUTA_IMGS.'/Dungeons_Hub.png'?> alt="DH_web_icon" height="128" width= "128">
     <form class=formlogin><label><?= saludo() ?></label></form>
 </header>
 <footer>

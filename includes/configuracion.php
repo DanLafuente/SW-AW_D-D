@@ -4,13 +4,14 @@
 /* */
 
 // Parámetros de configuración generales
-define('RUTA_APP', '/SW-AW_D-D');
+define('RUTA_APP', '/Dungeons_Hub/SW-AW_D-D-1');
+define('RAIZ_APP', dirname(__DIR__));
 define('RUTA_IMGS', RUTA_APP . '/img');
 define('RUTA_CSS', RUTA_APP . '/csses');
 define('RUTA_SRS', RUTA_APP . '/includes/src');
 define('RUTA_Usuario', RUTA_SRS . '/Usuarios');
 define('RUTA_personajes', RUTA_SRS . '/Personajes');
-define('RUTA_VIEW', RUTA_APP . '/includes/vistas'); 
+define('RUTA_VIEW', RAIZ_APP . '/includes/vistas'); 
 define('INSTALADA', true);
 
 // Parámetros de configuración de la BD
