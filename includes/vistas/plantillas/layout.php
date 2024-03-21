@@ -17,6 +17,7 @@
 				<?= $contenidoPrincipal ?>
 			</article>
 		</main>
+		<?php require('footer.php'); ?>
 		</div>
 	</body>
 </html>
