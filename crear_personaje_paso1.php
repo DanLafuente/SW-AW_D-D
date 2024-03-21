@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <body>
-    <?php require_once dirname(dirname(__DIR__)).'/vistas/commun/cabecera.php'; ?>
+    <?php require_once 'includes/configuracion.php' ;
+    $tituloPagina = 'creacion personaje paso1';
+    $contenidoPrincipal=<<<EOS
+
 
     <main>
-            <form action="http://localhost/SW-AW_D-D/includes/src/Personajes/crear_personaje_paso2.php" method="post">
+            <form action="http://localhost/SW-AW_D-D/crear_personaje_paso2.php" method="post">
             <p>
             <label>Nombre del presonaje</label>
             <input id="nombre" type="text" name="nombre_personaje" value="" />
@@ -244,8 +247,8 @@
             </p>
 
             <input type="submit" value="Enviar" />
+
             
     </main>
-</body>
-</html>
-
+EOS;
+require 'includes/vistas/commun/layout.php';
